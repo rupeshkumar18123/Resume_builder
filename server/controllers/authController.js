@@ -1,5 +1,7 @@
 const User = require('../models/User');
 const { createToken } = require('../utils/token');
+const bcrypt = require('bcryptjs');
+
 
 async function signup(req, res) {
   const { email, username, password } = req.body;
@@ -33,3 +35,7 @@ async function login(req, res) {
   return res.status(200).json({ message: "Login successful", success: true });
 }
 
+// ... existing code ...
+
+// Add exports at the bottom
+module.exports = { signup, login };
