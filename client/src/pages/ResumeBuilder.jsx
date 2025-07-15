@@ -3,6 +3,7 @@ import { useState } from "react";
 import ClassicTemplate from "../components/ClassicTemplate";
 import { FaPlus, FaSave, FaTrash, FaEye } from "react-icons/fa";
 import html2pdf from "html2pdf.js";
+import axios from 'axios';
 
 export default function ResumeBuilder() {
   const [form, setForm] = useState({
@@ -68,17 +69,21 @@ export default function ResumeBuilder() {
       jsPDF: { unit: "in", format: "a4", orientation: "portrait" }
     };
 
-    // Instant download
     html2pdf().set(opt).from(previewElement).save();
   }
 
   try {
-    await axios.post("http://localhost:5000/api/resumes", form, { withCredentials: true });
-    console.log("Resume data saved on server.");
+    const response = await axios.post(
+      "http://localhost:5000/api/resumes",
+      form,
+      { withCredentials: true }
+    );
+    console.log("Resume saved:", response.data);
   } catch (err) {
-    console.log("Server save failed.");
+    console.log("Server save error:", err);
   }
 }
+
 
 
   // Handler functions remain the same as before
