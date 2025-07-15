@@ -6,7 +6,7 @@ export default function Home() {
       <div className="card shadow-lg p-5 bg-white rounded" style={{ width: "100%", maxWidth: "600px" }}>
         <div className="card-body text-center">
           <h1 className="display-4 fw-bold text-primary mb-4">
-            Resume Builder Pro
+            Resume Builder
           </h1>
           <p className="lead text-muted mb-5">
             Create professional resumes in minutes
