@@ -89,7 +89,3 @@ Made with 💼 by [Rupesh Kumar](https://github.com/rupeshkumar18123)
 
 ```
 
----
-
-Let me know if you want to include more screenshots, live demo link, or deployment instructions (e.g., via Netlify or Vercel).
-```
