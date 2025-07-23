@@ -1,8 +1,3 @@
-Here's a clean and well-structured `README.md` file template for your [**Resume Builder**](https://github.com/rupeshkumar18123/Resume_builder) project:
-
----
-
-````markdown
 # 📄 Resume Builder
 
 Resume Builder is a web application designed to help users create professional resumes quickly and easily. With an intuitive interface and real-time preview, users can customize sections, download their resumes as PDFs, and tailor them to specific job roles.
