@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 async function verifyUser(req, res, next) {
+  //self defied token
   const token = req.cookies.token;
   if (!token) return res.status(401).json({ message: "Unauthorized" });
   
