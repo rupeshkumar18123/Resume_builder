@@ -51,12 +51,6 @@ Visit `http://localhost:3000` in your browser to use the app.
 
 ---
 
-## 📸 Screenshots
-
-*(Add some screenshots of the resume editor and the preview here)*
-
----
-
 ## 💡 Future Enhancements
 
 * User authentication and saving resumes online
